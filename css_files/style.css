@@ -70,6 +70,15 @@ nav a:hover {
     width: 20px;
     height: 5px;
   }
+  .hamburger.active span:nth-child(2) {
+    display: none;
+}
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate( 5px, 2px);
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -2px);
+}
 .hederline {
   border-bottom: 1px solid #ffffff;
   margin-left: -13%;
@@ -162,11 +171,12 @@ nav a:hover {
     right: -100%; 
     height: 80%;
     width: 50%; 
-    background-color: #000000;
+    background-color: #343434cd;
     padding: 10px; 
     transition: right 0.3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    background:  hs1(0 0% 100%/0.1);
 }
 .nav{
     display: flex;
@@ -183,3 +193,49 @@ nav a:hover {
     font-size: 4vw;
   }
 }
+/*product*/
+.product {
+  display: flex;
+  align-items: flex-start; /* Juster bilde og tekst på samme linje */
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+/*product*/
+.product{
+margin: 5%;
+background-color: aqua;
+}
+.product:hover {
+}
+.product img {
+  width: 40%; 
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px; 
+}
+.text-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  width: 60%; 
+}
+.text-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px; 
+  color: #ffffff;
+  top: 2%;
+}
+.text-container p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0; 
+}
+.link-container a{
+  color: black;
+}
+/*product*/

@@ -8,9 +8,9 @@ export async function fetchProductData() {
     const data = await response.json();
 
     console.log('Data fetched:', data); 
-    return data; // Returner dataene
+    return data; 
   } catch (error) {
     console.error('There was a problem with the fetch operation:', error);
-    return null; // Returner null ved feil
+    return null; 
   }
 }
