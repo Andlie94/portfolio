@@ -11,7 +11,7 @@ The project is built using HTML, CSS, and JavaScript. The website is fully respo
 - CSS
 ## Run the project
 Clone the repo:
-``git clone git@github.com:NoroffFEU/portfolio-1-example.git`
+`git clone git@github.com:NoroffFEU/portfolio-1-example.git`
 Install the dependencies:
-npm install
+`npm install`
 
