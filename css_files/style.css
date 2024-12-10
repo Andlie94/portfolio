@@ -2,6 +2,8 @@ body {
   background-color: #1b1d1e;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 header {
   margin-left: 10%;
@@ -52,32 +54,32 @@ nav a:hover {
   text-decoration: underline;
 }
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    margin-top: 15px;
-  }
-  
-  .hamburger span {
-    display: block;
-    width: 25px;
-    height: 5px;
-    background-color: #ffffff;
-    border-radius: 3px;
-  }
-  .hamburger span:nth-child(2) {
-    width: 20px;
-    height: 5px;
-  }
-  .hamburger.active span:nth-child(2) {
-    display: none;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.hamburger span:nth-child(2) {
+  width: 20px;
+  height: 5px;
+}
+.hamburger.active span:nth-child(2) {
+  display: none;
 }
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate( 5px, 2px);
+  transform: rotate(45deg) translate(5px, 2px);
 }
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -2px);
+  transform: rotate(-45deg) translate(5px, -2px);
 }
 .hederline {
   border-bottom: 1px solid #ffffff;
@@ -112,6 +114,21 @@ nav a:hover {
   transform: scale(1.1);
   transition: 0.5s ease;
 }
+.footerline {
+  display: none;
+}
+.social_media{
+  text-align: center;
+}
+.social_media a{
+  color: #ffffff;
+  font-size: 1.5em;
+  transition: 0.5s ease;
+  margin: 0 5px;
+}
+.social_media a:hover{
+  color: #a5a5a5;
+}
 .main_footer {
   display: flex;
   flex: row;
@@ -121,10 +138,16 @@ nav a:hover {
   margin-left: 10%;
   margin-right: 10%;
 }
+.aboutH1{
+  font-size: 1em;
+  margin-top: 10%;
+  margin-left: 5%;
+}
 .aboutcontainer {
   display: flex;
   width: 100%;
-  margin-bottom: 10%;
+  margin-top: 10%;
+  margin-bottom: 15%;
 }
 .image_about {
   flex: 1;
@@ -147,7 +170,7 @@ nav a:hover {
 .about_text h1 {
   font-size: 2em;
   margin: 0;
-  margin-top: 8%;
+  margin-top: 3%;
 }
 .about_text p {
   font-size: 1.5vw;
@@ -158,7 +181,13 @@ nav a:hover {
   border: 1px solid #ffffff;
   margin-top: 10%;
 }
-
+.skils{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: #ffffff;
+}
 @media (max-width: 668px) {
   .hamburger {
     display: flex;
@@ -167,27 +196,26 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin-top: 50px; 
-    right: -100%; 
+    margin-top: 50px;
+    right: -100%;
     height: 80%;
-    width: 50%; 
+    width: 50%;
     background-color: #343434cd;
-    padding: 10px; 
+    padding: 10px;
     transition: right 0.3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    background:  hs1(0 0% 100%/0.1);
-}
-.nav{
-    display: flex;
-}
+    background: hs1(0 0% 100%/0.1);
+    display: none;
+  }
   .nav_menu.active {
     right: 0;
+    display: flex;
   }
   .nav_menu a {
     font-size: 1.5em;
   }
-  li{
+  li {
     padding: 10px;
     margin-top: 30%;
     font-size: 4vw;
@@ -196,7 +224,7 @@ nav a:hover {
 /*product*/
 .product {
   display: flex;
-  align-items: flex-start; /* Juster bilde og tekst på samme linje */
+  align-items: flex-start;
   background-color: #1e1e1e;
   color: white;
   border-radius: 10px;
@@ -206,36 +234,138 @@ nav a:hover {
   overflow: hidden;
 }
 /*product*/
-.product{
-margin: 5%;
-background-color: aqua;
+.product {
+  margin: 5%;
+  background-color: rgba(58, 58, 58, 0.4);
 }
 .product:hover {
+  background-color: #71717161;
+  transition: 0.3s ease-in-out;
 }
 .product img {
-  width: 40%; 
+  width: 40%;
   height: auto;
   border-radius: 10px;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 .text-container {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  width: 60%; 
+  flex-direction: column;
+  justify-content: center;
 }
 .text-container h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px; 
+  font-size: 2rem;
+  margin-bottom: -10px;
   color: #ffffff;
-  top: 2%;
+  margin-top: 0;
 }
 .text-container p {
-  font-size: 1rem;
+  font-size: 2vw;
   color: #ffffff;
-  margin: 0; 
+  margin-bottom: 4%;
+  cursor: pointer;
 }
-.link-container a{
-  color: black;
+.link-container a {
+  color: #ffffff;
+  padding: 3%;
+  margin-left: -3%;
+  font-weight: 900;
+}
+.link-container a:hover {
+  color: #a5a5a5;
 }
 /*product*/
+
+/* responsive */
+@media screen and (max-width: 668px) {
+  body {
+    overflow-x: hidden;
+  }
+  .main_div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow-x: hidden !important;
+  }
+  .design,
+  .code {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
+  .code {
+    margin-top: 100px;
+  }
+  .line {
+    border: 1px solid #ffffff;
+    height: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+  .image_about {
+    display: flex;
+    justify-content: center;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 13%;
+    margin-bottom: 10%;
+  }
+  .image_about img {
+    justify-content: center;
+    width: 50vw;
+  }
+  .about_line {
+    height: 0px;
+    border: 1px solid #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .about_text{
+    text-align: center;
+  }
+  .about_text h1 {
+    font-size: 1.5em;
+    margin-top: 2%;
+  }
+  .about_text p {
+    font-size: 4vw;
+    margin: 5%;
+  }
+  .main_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footerline{
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .product {
+    display: flex;
+    flex-direction: column
+  }
+  .product img {
+    width: 100%; 
+  }
+  .text-container p {
+    font-size: 1rem;
+  }
+  .link-container{
+    display: flex; 
+    text-align: center;
+    gap: 10px; 
+  }
+}

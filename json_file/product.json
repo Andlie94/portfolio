@@ -3,15 +3,15 @@
         "id": 1,
         "title": "Stifinneren",
         "image": "../img/Stifinneren.png",
-        "description": "This is a product description",
+        "description": "Technology JavaScript, HTML, and CSS. This is a project developed for a fictive firm called Stifinneren." ,
         "url": "https://github.com/Andlie94/Andre_Noroff_exam_PE1",
         "url1": "https://andlie94.github.io"
     },
     {
         "id": 2,
-        "title": "Skedsmo Museum",
+        "title": "Museum",
         "image": "../img/museum.jpg",
-        "description": "This is a product description",
+        "description": "Technology HTML, and CSS. This is a project developed for a fictive firm called Skedsmomusem. its a children webside.",
         "url": "https://github.com/Andlie94/andlie94.github.io",
         "url1": "https://andlie94.github.io"
     },
@@ -19,8 +19,8 @@
         "id": 3,
         "title": "Rainydays",
         "image": "../img/Rainydays.jpg",
-        "description": "This is a product description",
+        "description": "Technology HTML, and CSS. This is a project developed for a fictive firm called Rainydays. its a webshop with out Javascript.",
         "url": "https://github.com/Andlie94/AC_project_JAN24_HTML_CSS",
-        "url1": "https://andlie94.github.io"
+        "url1": "https://andlie94.github.io/AC_project_JAN24_HTML_CSS/"
     }
 ]
