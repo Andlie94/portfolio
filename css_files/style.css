@@ -275,7 +275,15 @@ nav a:hover {
   color: #a5a5a5;
 }
 /*product*/
-
+.contact_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30%;
+}
 /* responsive */
 @media screen and (max-width: 668px) {
   body {
