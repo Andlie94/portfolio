@@ -270,6 +270,7 @@ nav a:hover {
   padding: 3%;
   margin-left: -3%;
   font-weight: 900;
+  font-size: 1rem;
 }
 .link-container a:hover {
   color: #a5a5a5;
@@ -367,9 +368,14 @@ nav a:hover {
   }
   .product img {
     width: 100%; 
+    margin: 0px;
   }
   .text-container p {
     font-size: 1rem;
+  }
+  .text-container h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
   }
   .link-container{
     display: flex; 
